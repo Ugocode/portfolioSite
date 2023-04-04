@@ -78,15 +78,39 @@ class MobileProjects extends StatelessWidget {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
+                    children: [
                       ProjectWidget(
-                          title: 'Sifian Website', bgColor: Colors.orange),
+                        title: 'Options Food Store App',
+                        bgColor: Colors.orange,
+                        image: Image.asset(
+                          'Assets/images/foo.png',
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                       ProjectWidget(
-                          title: 'Sifian Website', bgColor: Colors.orange),
+                        title: 'Tef Food NG App',
+                        bgColor: Colors.orange,
+                        image: Image.asset(
+                          'Assets/images/tef.png',
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                       ProjectWidget(
-                          title: 'Sifian Website', bgColor: Colors.orange),
+                        title: 'Shopy Girl App',
+                        bgColor: Colors.orange,
+                        image: Image.asset(
+                          'Assets/images/shopy.png',
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                       ProjectWidget(
-                          title: 'Sifian Website', bgColor: Colors.orange),
+                        title: 'Task App',
+                        bgColor: Colors.orange,
+                        image: Image.asset(
+                          'Assets/images/task.jpeg',
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                     ],
                   )
                 ],
