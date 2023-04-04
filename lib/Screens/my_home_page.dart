@@ -182,7 +182,7 @@ class MyHomePage extends StatelessWidget {
                             ),
                             Container(
                               height: height / 2,
-                              width: width / 5,
+                              width: width / 4,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
                                   color: Colors.grey[900]),
@@ -191,7 +191,7 @@ class MyHomePage extends StatelessWidget {
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Container(
-                                      height: 80,
+                                      height: height / 12,
                                       width: width / 4,
                                       decoration: BoxDecoration(
                                           borderRadius:
@@ -225,7 +225,7 @@ class MyHomePage extends StatelessWidget {
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Container(
-                                      height: 80,
+                                      height: height / 12,
                                       width: width / 4,
                                       decoration: BoxDecoration(
                                           borderRadius:
@@ -318,11 +318,11 @@ class MyHomePage extends StatelessWidget {
                     children: [
                       //About us column   +++++++++++++++++++++++++++++++++++++
                       const SizedBox(
-                        width: 10,
+                        width: 14,
                       ),
                       Container(
-                        height: 698,
-                        width: width / 1.5,
+                        height: height / 1.3,
+                        width: width / 1.4,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: const Color.fromARGB(255, 23, 22, 22),
@@ -377,17 +377,21 @@ class MyHomePage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              const Spacer(),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              // const Spacer(),
                               //button column ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
                               Column(
                                 children: [
                                   Padding(
                                     padding: EdgeInsets.only(
                                       left: width / 1.8,
-                                      bottom: 12,
+                                      bottom: height / 24,
                                     ),
                                     child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
+                                            minimumSize: const Size(130, 60),
                                             backgroundColor: Colors.green),
                                         onPressed: () {
                                           String? encodeQueryParameters(
@@ -413,7 +417,7 @@ class MyHomePage extends StatelessWidget {
                                           launchUrl(emailLaunchUri);
                                         },
                                         child: const Text(
-                                          "Email me",
+                                          "Contact me now",
                                           style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 20),
@@ -480,8 +484,8 @@ class MyHomePage extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Container(
-                                  height: 300,
-                                  width: 300,
+                                  height: height / 3,
+                                  width: width / 5,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.green,
@@ -489,13 +493,13 @@ class MyHomePage extends StatelessWidget {
                                   child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
                                       child: Image.asset(
-                                        "Assets/images/cifian.PNG",
+                                        "Assets/images/brain.jpg",
                                         fit: BoxFit.fill,
                                       )),
                                 ),
                                 Container(
-                                  height: 300,
-                                  width: 300,
+                                  height: height / 3,
+                                  width: width / 5,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.green,
@@ -508,8 +512,8 @@ class MyHomePage extends StatelessWidget {
                                       )),
                                 ),
                                 Container(
-                                  height: 300,
-                                  width: 300,
+                                  height: height / 3,
+                                  width: width / 5,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.green,
@@ -578,8 +582,8 @@ class MyHomePage extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Container(
-                                  height: 300,
-                                  width: 300,
+                                  height: height / 3,
+                                  width: width / 5,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
                                       color: Colors.green),
@@ -591,8 +595,8 @@ class MyHomePage extends StatelessWidget {
                                       )),
                                 ),
                                 Container(
-                                  height: 300,
-                                  width: 300,
+                                  height: height / 3,
+                                  width: width / 5,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
                                       color: Colors.green),
@@ -604,8 +608,8 @@ class MyHomePage extends StatelessWidget {
                                       )),
                                 ),
                                 Container(
-                                  height: 300,
-                                  width: 300,
+                                  height: height / 3,
+                                  width: width / 5,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
                                       color: Colors.green,

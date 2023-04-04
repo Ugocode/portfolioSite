@@ -43,10 +43,10 @@ class WebProjects extends StatelessWidget {
                       ),
                     ),
                     ProjectWidget(
-                      title: 'Sifian Website',
+                      title: 'Brain Factor Website',
                       bgColor: Colors.blueGrey,
                       image: Image.asset(
-                        'Assets/images/cifian.PNG',
+                        'Assets/images/brain.jpg',
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -80,15 +80,39 @@ class WebProjects extends StatelessWidget {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
+                    children: [
                       ProjectWidget(
-                          title: 'Sifian Website', bgColor: Colors.orange),
+                        title: 'Ruvie Website',
+                        bgColor: Colors.orange,
+                        image: Image.asset(
+                          'Assets/images/rejuv.jpg',
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                       ProjectWidget(
-                          title: 'Sifian Website', bgColor: Colors.orange),
+                        title: 'VasBar Website',
+                        bgColor: Colors.orange,
+                        image: Image.asset(
+                          'Assets/images/vas.jpg',
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                       ProjectWidget(
-                          title: 'Sifian Website', bgColor: Colors.orange),
+                        title: 'Pat Link Dynamic Website',
+                        bgColor: Colors.orange,
+                        image: Image.asset(
+                          'Assets/images/pat.jpg',
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                       ProjectWidget(
-                          title: 'Sifian Website', bgColor: Colors.orange),
+                        title: 'Sifian Website',
+                        bgColor: Colors.orange,
+                        image: Image.asset(
+                          'Assets/images/cifian.PNG',
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                     ],
                   )
                 ],
