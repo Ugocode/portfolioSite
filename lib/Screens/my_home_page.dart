@@ -321,7 +321,7 @@ class MyHomePage extends StatelessWidget {
                         width: 14,
                       ),
                       Container(
-                        height: height / 1.3,
+                        height: height / 1.2,
                         width: width / 1.4,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
