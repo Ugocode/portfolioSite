@@ -380,7 +380,7 @@ class MyHomePage extends StatelessWidget {
                               const SizedBox(
                                 height: 10,
                               ),
-                              // const Spacer(),
+                              const Spacer(),
                               //button column ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
                               Column(
                                 children: [
