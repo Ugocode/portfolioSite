@@ -483,19 +483,22 @@ class MyHomePage extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Container(
-                                  height: height / 3,
-                                  width: width / 5,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    color: Colors.green,
-                                  ),
-                                  child: ClipRRect(
+                                InkWell(
+                                  onHover: (value) {},
+                                  child: Container(
+                                    height: height / 3,
+                                    width: width / 5,
+                                    decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
-                                      child: Image.asset(
-                                        "Assets/images/brain.jpg",
-                                        fit: BoxFit.fill,
-                                      )),
+                                      color: Colors.green,
+                                    ),
+                                    child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(10),
+                                        child: Image.asset(
+                                          "Assets/images/brain.jpg",
+                                          fit: BoxFit.fill,
+                                        )),
+                                  ),
                                 ),
                                 Container(
                                   height: height / 3,
