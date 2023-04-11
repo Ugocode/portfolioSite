@@ -1,8 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/Screens/my_home_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class WebProjects extends StatelessWidget {
-  const WebProjects({super.key});
+  WebProjects({super.key});
+
+  //Create links to link to each site
+
+  final Uri _patLink = Uri.parse("https://www.patlinkdynamics.com/");
+
+  Future<void> _launchPatLink() async {
+    if (!await launchUrl(_patLink)) {
+      throw Exception('Could not launch $_patLink');
+    }
+  }
+
+  //END of links to each site
 
   @override
   Widget build(BuildContext context) {
@@ -97,12 +110,17 @@ class WebProjects extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                      ProjectWidget(
-                        title: 'Pat Link Dynamic Website',
-                        bgColor: Colors.orange,
-                        image: Image.asset(
-                          'Assets/images/pat.jpg',
-                          fit: BoxFit.fill,
+                      InkWell(
+                        onTap: () {
+                          _launchPatLink();
+                        },
+                        child: ProjectWidget(
+                          title: 'Pat Link Dynamic Website',
+                          bgColor: Colors.orange,
+                          image: Image.asset(
+                            'Assets/images/pat.jpg',
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       ),
                       ProjectWidget(

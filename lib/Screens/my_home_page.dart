@@ -466,8 +466,7 @@ class MyHomePage extends StatelessWidget {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) =>
-                                              const WebProjects()));
+                                          builder: (context) => WebProjects()));
                                 },
                                 child: const Text(
                                   "See more",
