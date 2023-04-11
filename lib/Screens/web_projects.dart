@@ -15,6 +15,24 @@ class WebProjects extends StatelessWidget {
     }
   }
 
+  //for ruvie
+  final Uri _ruviLink = Uri.parse("https://ruviebeautyclinic.com/");
+
+  Future<void> _launchRuviLink() async {
+    if (!await launchUrl(_ruviLink)) {
+      throw Exception('Could not launch $_ruviLink');
+    }
+  }
+
+  //for BrainFactor
+  final Uri _brianFactorLink = Uri.parse("https://brainfactormerchants.com/");
+
+  Future<void> _launchBrainLink() async {
+    if (!await launchUrl(_brianFactorLink)) {
+      throw Exception('Could not launch $_brianFactorLink');
+    }
+  }
+
   //END of links to each site
 
   @override
@@ -55,12 +73,17 @@ class WebProjects extends StatelessWidget {
                         fit: BoxFit.fill,
                       ),
                     ),
-                    ProjectWidget(
-                      title: 'Brain Factor Website',
-                      bgColor: Colors.blueGrey,
-                      image: Image.asset(
-                        'Assets/images/brain.jpg',
-                        fit: BoxFit.fill,
+                    InkWell(
+                      onTap: () {
+                        _launchBrainLink();
+                      },
+                      child: ProjectWidget(
+                        title: 'Brain Factor Website',
+                        bgColor: Colors.blueGrey,
+                        image: Image.asset(
+                          'Assets/images/brain.jpg',
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
                     ProjectWidget(
@@ -94,12 +117,17 @@ class WebProjects extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      ProjectWidget(
-                        title: 'Ruvie Website',
-                        bgColor: Colors.orange,
-                        image: Image.asset(
-                          'Assets/images/rejuv.jpg',
-                          fit: BoxFit.fill,
+                      InkWell(
+                        onTap: () {
+                          _launchRuviLink();
+                        },
+                        child: ProjectWidget(
+                          title: 'Ruvie Website',
+                          bgColor: Colors.orange,
+                          image: Image.asset(
+                            'Assets/images/rejuv.jpg',
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       ),
                       ProjectWidget(
