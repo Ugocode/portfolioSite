@@ -42,6 +42,15 @@ class WebProjects extends StatelessWidget {
     }
   }
 
+  //for Instant Destinations
+  final Uri _instantLink = Uri.parse("https://instantdestination.com.au/");
+
+  Future<void> _launchInstantLink() async {
+    if (!await launchUrl(_instantLink)) {
+      throw Exception('Could not launch $_instantLink');
+    }
+  }
+
   //END of links to each site
 
   @override
@@ -74,12 +83,17 @@ class WebProjects extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    ProjectWidget(
-                      title: 'Instant Website',
-                      bgColor: Colors.blueGrey,
-                      image: Image.asset(
-                        'Assets/images/instant11.PNG',
-                        fit: BoxFit.fill,
+                    InkWell(
+                      onTap: () {
+                        _launchInstantLink();
+                      },
+                      child: ProjectWidget(
+                        title: 'Instant Website',
+                        bgColor: Colors.blueGrey,
+                        image: Image.asset(
+                          'Assets/images/instant11.PNG',
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
                     InkWell(
