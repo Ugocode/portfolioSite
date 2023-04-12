@@ -87,7 +87,7 @@ class MyHomePage extends StatelessWidget {
                                             MainAxisAlignment.center,
                                         children: const [
                                           Text(
-                                            '5+',
+                                            '3+',
                                             style: TextStyle(
                                                 fontSize: 50,
                                                 color: Colors.white),
@@ -116,7 +116,7 @@ class MyHomePage extends StatelessWidget {
                                             MainAxisAlignment.center,
                                         children: const [
                                           Text(
-                                            '55+',
+                                            '34+',
                                             style: TextStyle(
                                                 fontSize: 50,
                                                 color: Colors.black87),
@@ -145,7 +145,7 @@ class MyHomePage extends StatelessWidget {
                                             MainAxisAlignment.center,
                                         children: const [
                                           Text(
-                                            '45+',
+                                            '28+',
                                             style: TextStyle(
                                                 fontSize: 50,
                                                 color: Colors.white),
