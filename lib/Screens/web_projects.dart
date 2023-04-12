@@ -33,6 +33,15 @@ class WebProjects extends StatelessWidget {
     }
   }
 
+  //for GSLM
+  final Uri _gslmLink = Uri.parse("https://gslm.co.uk/");
+
+  Future<void> _launchgslmLink() async {
+    if (!await launchUrl(_gslmLink)) {
+      throw Exception('Could not launch $_gslmLink');
+    }
+  }
+
   //END of links to each site
 
   @override
@@ -86,12 +95,17 @@ class WebProjects extends StatelessWidget {
                         ),
                       ),
                     ),
-                    ProjectWidget(
-                      title: 'Gslm Website',
-                      bgColor: Colors.blueGrey,
-                      image: Image.asset(
-                        'Assets/images/gslm.PNG',
-                        fit: BoxFit.fill,
+                    InkWell(
+                      onTap: () {
+                        _launchgslmLink();
+                      },
+                      child: ProjectWidget(
+                        title: 'Gslm Website',
+                        bgColor: Colors.blueGrey,
+                        image: Image.asset(
+                          'Assets/images/gslm.PNG',
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
                     ProjectWidget(
