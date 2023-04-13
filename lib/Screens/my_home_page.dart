@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_website/Screens/mobile_projects.dart';
 import 'package:portfolio_website/Screens/web_projects.dart';
@@ -62,10 +63,16 @@ class MyHomePage extends StatelessWidget {
                           children: [
                             Column(
                               children: [
-                                const Text(
-                                  "Bringing your Ideas\nto life through\nSoftware Development.",
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 60),
+                                Animate(
+                                  effects: const [
+                                    FadeEffect(),
+                                    ScaleEffect(duration: Duration(seconds: 5))
+                                  ],
+                                  child: const Text(
+                                    "Bringing your Ideas\nto life through\nSoftware Development.",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 60),
+                                  ),
                                 ),
                                 const SizedBox(
                                   height: 10,
@@ -100,7 +107,7 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ),
+                                    ).animate().fadeIn().then().slideX(),
                                     const SizedBox(
                                       width: 40,
                                     ),
@@ -158,7 +165,7 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ),
+                                    ).animate().fadeIn(),
                                   ],
                                 )
                               ],
@@ -439,52 +446,75 @@ class MyHomePage extends StatelessWidget {
             //  WEB design column now ========================================
             Column(
               children: [
-                Container(
-                  height: 550,
-                  width: width / 1.5,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        color: Colors.white.withOpacity(0.6),
-                      ),
-                      color: Colors.black54),
-                  child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              const Text(
-                                "Web Design Portfolio",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 30),
-                              ),
-                              TextButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => WebProjects()));
-                                },
-                                child: const Text(
-                                  "See more",
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 20),
-                                ),
-                              )
-                            ],
-                          ),
+                Animate(
+                  effects: const [
+                    FadeEffect(),
+                    ScaleEffect(duration: Duration(seconds: 5))
+                  ],
+                  child: Container(
+                    height: 550,
+                    width: width / 1.5,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(
+                          color: Colors.white.withOpacity(0.6),
                         ),
-                        Padding(
-                            padding: const EdgeInsets.only(top: 60),
+                        color: Colors.black54),
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(12.0),
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                InkWell(
-                                  onHover: (value) {},
-                                  child: Container(
+                                const Text(
+                                  "Web Design Portfolio",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 30),
+                                ),
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                WebProjects()));
+                                  },
+                                  child: const Text(
+                                    "See more",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Padding(
+                              padding: const EdgeInsets.only(top: 60),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  InkWell(
+                                    onHover: (value) {},
+                                    child: Container(
+                                      height: height / 3,
+                                      width: width / 5,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                        color: Colors.green,
+                                      ),
+                                      child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          child: Image.asset(
+                                            "Assets/images/brain.jpg",
+                                            fit: BoxFit.fill,
+                                          )),
+                                    ),
+                                  ),
+                                  Container(
                                     height: height / 3,
                                     width: width / 5,
                                     decoration: BoxDecoration(
@@ -494,42 +524,28 @@ class MyHomePage extends StatelessWidget {
                                     child: ClipRRect(
                                         borderRadius: BorderRadius.circular(10),
                                         child: Image.asset(
-                                          "Assets/images/brain.jpg",
+                                          "Assets/images/gslm.PNG",
                                           fit: BoxFit.fill,
                                         )),
                                   ),
-                                ),
-                                Container(
-                                  height: height / 3,
-                                  width: width / 5,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    color: Colors.green,
-                                  ),
-                                  child: ClipRRect(
+                                  Container(
+                                    height: height / 3,
+                                    width: width / 5,
+                                    decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
-                                      child: Image.asset(
-                                        "Assets/images/gslm.PNG",
-                                        fit: BoxFit.fill,
-                                      )),
-                                ),
-                                Container(
-                                  height: height / 3,
-                                  width: width / 5,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(10),
-                                    color: Colors.green,
-                                  ),
-                                  child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(10),
-                                      child: Image.asset(
-                                        "Assets/images/instant11.png",
-                                        fit: BoxFit.fill,
-                                      )),
-                                )
-                              ],
-                            )),
-                      ]),
+                                      color: Colors.green,
+                                    ),
+                                    child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(10),
+                                        child: Image.asset(
+                                          "Assets/images/instant11.png",
+                                          fit: BoxFit.fill,
+                                        )),
+                                  )
+                                ],
+                              )),
+                        ]),
+                  ),
                 ),
               ],
             ),
