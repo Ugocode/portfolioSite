@@ -424,7 +424,7 @@ class MyHomePage extends StatelessWidget {
                                           launchUrl(emailLaunchUri);
                                         },
                                         child: const Text(
-                                          "Contact me now",
+                                          "Hire Me Now",
                                           style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 20),
