@@ -107,7 +107,7 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ).animate().fadeIn().then().slideX(),
+                                    ).animate().fadeIn().then().shake(),
                                     const SizedBox(
                                       width: 40,
                                     ),
@@ -679,7 +679,7 @@ class MyHomePage extends StatelessWidget {
                             "Assets/images/aws.png",
                             fit: BoxFit.fill,
                           )),
-                    ),
+                    ).animate().shake(duration: const Duration(seconds: 2)),
                     Container(
                       height: 300,
                       width: width / 5,
@@ -695,7 +695,7 @@ class MyHomePage extends StatelessWidget {
                             "Assets/images/flutter1.jpg",
                             fit: BoxFit.fill,
                           )),
-                    ),
+                    ).animate().shake(duration: const Duration(seconds: 2)),
                     Container(
                       height: 300,
                       width: width / 5,
@@ -706,12 +706,13 @@ class MyHomePage extends StatelessWidget {
                           ),
                           color: Colors.grey[900]),
                       child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
-                          child: Image.asset(
-                            "Assets/images/sql.jpg",
-                            fit: BoxFit.fill,
-                          )),
-                    ),
+                        borderRadius: BorderRadius.circular(10),
+                        child: Image.asset(
+                          "Assets/images/sql.jpg",
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ).animate().shake(duration: const Duration(seconds: 2)),
                     Container(
                       height: 300,
                       width: width / 5,
@@ -722,12 +723,13 @@ class MyHomePage extends StatelessWidget {
                           ),
                           color: Colors.grey[900]),
                       child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
-                          child: Image.asset(
-                            "Assets/images/api.jpg",
-                            fit: BoxFit.fill,
-                          )),
-                    ),
+                        borderRadius: BorderRadius.circular(10),
+                        child: Image.asset(
+                          "Assets/images/api.jpg",
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ).animate().shake(duration: const Duration(seconds: 2)),
                   ],
                 ),
               ],
