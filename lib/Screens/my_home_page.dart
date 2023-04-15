@@ -136,7 +136,7 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ),
+                                    ).animate().shake(),
                                     const SizedBox(
                                       width: 40,
                                     ),
@@ -165,7 +165,7 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ).animate().fadeIn(),
+                                    ).animate().shake(),
                                   ],
                                 )
                               ],
