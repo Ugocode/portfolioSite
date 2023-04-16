@@ -107,7 +107,8 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ).animate().fadeIn().then().shake(),
+                                    ).animate().shake(
+                                        duration: const Duration(seconds: 1)),
                                     const SizedBox(
                                       width: 40,
                                     ),
@@ -136,7 +137,8 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ).animate().shake(),
+                                    ).animate().shake(
+                                        duration: const Duration(seconds: 2)),
                                     const SizedBox(
                                       width: 40,
                                     ),
@@ -165,7 +167,8 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ).animate().shake(),
+                                    ).animate().shake(
+                                        duration: const Duration(seconds: 3)),
                                   ],
                                 )
                               ],
@@ -424,7 +427,7 @@ class MyHomePage extends StatelessWidget {
                                           launchUrl(emailLaunchUri);
                                         },
                                         child: const Text(
-                                          "Hire Me Now",
+                                          "Hire Me 💪🏼",
                                           style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 20),
