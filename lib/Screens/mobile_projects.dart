@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 import 'my_home_page.dart';
 
@@ -39,7 +40,7 @@ class MobileProjects extends StatelessWidget {
                         'Assets/images/moneyvest.PNG',
                         fit: BoxFit.fill,
                       ),
-                    ),
+                    ).animate().shake(duration: const Duration(seconds: 1)),
                     ProjectWidget(
                       title: 'MCare App',
                       bgColor: Colors.orange,
@@ -47,7 +48,7 @@ class MobileProjects extends StatelessWidget {
                         'Assets/images/mCare.png',
                         fit: BoxFit.fill,
                       ),
-                    ),
+                    ).animate().shake(duration: const Duration(seconds: 2)),
                     ProjectWidget(
                       title: 'Corona Virus App',
                       bgColor: Colors.orange,
@@ -55,7 +56,7 @@ class MobileProjects extends StatelessWidget {
                         'Assets/images/covidapp.png',
                         fit: BoxFit.fill,
                       ),
-                    ),
+                    ).animate().shake(duration: const Duration(seconds: 3)),
                     ProjectWidget(
                       title: 'Task App',
                       bgColor: Colors.orange,
@@ -63,7 +64,7 @@ class MobileProjects extends StatelessWidget {
                         'Assets/images/task.jpeg',
                         fit: BoxFit.fill,
                       ),
-                    ),
+                    ).animate().shake(duration: const Duration(seconds: 4)),
                   ],
                 )
               ],
@@ -86,7 +87,7 @@ class MobileProjects extends StatelessWidget {
                           'Assets/images/foo.png',
                           fit: BoxFit.fill,
                         ),
-                      ),
+                      ).animate().shake(duration: const Duration(seconds: 5)),
                       ProjectWidget(
                         title: 'Tef Food NG App',
                         bgColor: Colors.orange,
@@ -94,7 +95,7 @@ class MobileProjects extends StatelessWidget {
                           'Assets/images/tef.png',
                           fit: BoxFit.fill,
                         ),
-                      ),
+                      ).animate().shake(duration: const Duration(seconds: 6)),
                       ProjectWidget(
                         title: 'Shopy Girl App',
                         bgColor: Colors.orange,
@@ -102,7 +103,7 @@ class MobileProjects extends StatelessWidget {
                           'Assets/images/shopy.png',
                           fit: BoxFit.fill,
                         ),
-                      ),
+                      ).animate().shake(duration: const Duration(seconds: 7)),
                       ProjectWidget(
                         title: 'Task App',
                         bgColor: Colors.orange,
@@ -110,7 +111,7 @@ class MobileProjects extends StatelessWidget {
                           'Assets/images/task.jpeg',
                           fit: BoxFit.fill,
                         ),
-                      ),
+                      ).animate().shake(duration: const Duration(seconds: 8)),
                     ],
                   )
                 ],
