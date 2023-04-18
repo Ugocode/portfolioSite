@@ -66,7 +66,11 @@ class MyHomePage extends StatelessWidget {
                                 Animate(
                                   effects: const [
                                     FadeEffect(),
-                                    ScaleEffect(duration: Duration(seconds: 5))
+                                    ScaleEffect(duration: Duration(seconds: 5)),
+                                    // TintEffect(
+                                    //     color: Colors.blueGrey,
+                                    //     begin: 8,
+                                    //     end: 0)
                                   ],
                                   child: const Text(
                                     "Bringing your Ideas\nto life through\nSoftware Development.",
@@ -698,7 +702,7 @@ class MyHomePage extends StatelessWidget {
                             "Assets/images/flutter1.jpg",
                             fit: BoxFit.fill,
                           )),
-                    ).animate().shake(duration: const Duration(seconds: 2)),
+                    ).animate().shake(duration: const Duration(seconds: 3)),
                     Container(
                       height: 300,
                       width: width / 5,
@@ -715,7 +719,7 @@ class MyHomePage extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 2)),
+                    ).animate().shake(duration: const Duration(seconds: 4)),
                     Container(
                       height: 300,
                       width: width / 5,
@@ -732,7 +736,7 @@ class MyHomePage extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 2)),
+                    ).animate().shake(duration: const Duration(seconds: 5)),
                   ],
                 ),
               ],
