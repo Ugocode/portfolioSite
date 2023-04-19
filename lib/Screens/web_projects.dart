@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:portfolio_website/Screens/my_home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -74,6 +75,15 @@ class WebProjects extends StatelessWidget {
                 style: TextStyle(fontSize: 20, color: Colors.blueGrey[300]),
               ),
             ),
+            const SizedBox(
+              height: 20,
+            ),
+            Center(
+              child: Text(
+                "We are excited to see you here! see how we are Shaking 😂😂😂 ",
+                style: TextStyle(fontSize: 20, color: Colors.blueGrey[300]),
+              ),
+            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -95,7 +105,7 @@ class WebProjects extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ),
+                    ).animate().shake(duration: const Duration(seconds: 3)),
                     InkWell(
                       onTap: () {
                         _launchBrainLink();
@@ -108,7 +118,7 @@ class WebProjects extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ),
+                    ).animate().shake(duration: const Duration(seconds: 3)),
                     InkWell(
                       onTap: () {
                         _launchgslmLink();
@@ -121,7 +131,7 @@ class WebProjects extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ),
+                    ).animate().shake(),
                     ProjectWidget(
                       title: 'Sifian Website',
                       bgColor: Colors.blueGrey,
@@ -129,7 +139,7 @@ class WebProjects extends StatelessWidget {
                         'Assets/images/cifian.PNG',
                         fit: BoxFit.fill,
                       ),
-                    ),
+                    ).animate().shake(duration: const Duration(seconds: 3)),
                   ],
                 )
               ],
@@ -157,7 +167,7 @@ class WebProjects extends StatelessWidget {
                             fit: BoxFit.fill,
                           ),
                         ),
-                      ),
+                      ).animate().shake(duration: const Duration(seconds: 3)),
                       ProjectWidget(
                         title: 'VasBar Website',
                         bgColor: Colors.orange,
