@@ -311,7 +311,7 @@ class MyHomePage extends StatelessWidget {
                   color: Colors.blueGrey[400]),
             ),
             const SizedBox(
-              height: 30,
+              height: 32,
             ),
             //3 tiles middle:
             // Column(
