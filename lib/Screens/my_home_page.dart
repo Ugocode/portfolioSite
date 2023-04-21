@@ -736,7 +736,7 @@ class MyHomePage extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 5)),
+                    ).animate().slide(),
                   ],
                 ),
               ],
