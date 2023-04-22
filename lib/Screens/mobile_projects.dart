@@ -24,6 +24,8 @@ class MobileProjects extends StatelessWidget {
             //       borderRadius: BorderRadius.circular(10),
             //       color: Colors.purple),
             // ),
+            const Text(
+                'Hello And Welcome here are some of my Mobile projects built with Flutter and Dart'),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
