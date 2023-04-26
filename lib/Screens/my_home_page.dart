@@ -111,8 +111,7 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ).animate().shake(
-                                        duration: const Duration(seconds: 1)),
+                                    ).animate(),
                                     const SizedBox(
                                       width: 40,
                                     ),
@@ -141,8 +140,7 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ).animate().shake(
-                                        duration: const Duration(seconds: 2)),
+                                    ).animate(),
                                     const SizedBox(
                                       width: 40,
                                     ),
@@ -171,8 +169,7 @@ class MyHomePage extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    ).animate().shake(
-                                        duration: const Duration(seconds: 3)),
+                                    ).animate()
                                   ],
                                 )
                               ],
@@ -686,7 +683,7 @@ class MyHomePage extends StatelessWidget {
                             "Assets/images/aws.png",
                             fit: BoxFit.fill,
                           )),
-                    ).animate().shake(duration: const Duration(seconds: 2)),
+                    ).animate().flip(duration: const Duration(seconds: 2)),
                     Container(
                       height: 300,
                       width: width / 5,
@@ -702,7 +699,7 @@ class MyHomePage extends StatelessWidget {
                             "Assets/images/flutter1.jpg",
                             fit: BoxFit.fill,
                           )),
-                    ).animate().shake(duration: const Duration(seconds: 3)),
+                    ).animate().flip(duration: const Duration(seconds: 3)),
                     Container(
                       height: 300,
                       width: width / 5,
@@ -719,7 +716,7 @@ class MyHomePage extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 4)),
+                    ).animate().flip(duration: const Duration(seconds: 4)),
                     Container(
                       height: 300,
                       width: width / 5,
@@ -736,7 +733,7 @@ class MyHomePage extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 5)),
+                    ).animate().flip(duration: const Duration(seconds: 5)),
                   ],
                 ),
               ],
