@@ -807,7 +807,7 @@ class MyHomePage extends StatelessWidget {
             ),
             const Center(
               child: Text(
-                'Made with Love and Flutter. ©2023 ugocode',
+                'Made with Love and Flutter. ©2024 ugocode',
                 style: TextStyle(fontSize: 20, color: Colors.white54),
               ),
             ),
