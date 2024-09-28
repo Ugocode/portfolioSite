@@ -93,10 +93,10 @@ class MyHomePage extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(10),
                                           color: Colors.green),
-                                      child: Column(
+                                      child: const Column(
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
-                                        children: const [
+                                        children: [
                                           Text(
                                             '3+',
                                             style: TextStyle(
@@ -122,10 +122,10 @@ class MyHomePage extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(10),
                                           color: Colors.orange),
-                                      child: Column(
+                                      child: const Column(
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
-                                        children: const [
+                                        children: [
                                           Text(
                                             '34+',
                                             style: TextStyle(
@@ -151,10 +151,10 @@ class MyHomePage extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(10),
                                           color: Colors.pink),
-                                      child: Column(
+                                      child: const Column(
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
-                                        children: const [
+                                        children: [
                                           Text(
                                             '28+',
                                             style: TextStyle(
@@ -208,12 +208,12 @@ class MyHomePage extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(10),
                                           color: Colors.brown),
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
+                                      child: const Padding(
+                                        padding: EdgeInsets.all(8.0),
                                         child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
-                                          children: const [
+                                          children: [
                                             Text(
                                               'Name:',
                                               style: TextStyle(
@@ -242,12 +242,12 @@ class MyHomePage extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(10),
                                           color: Colors.brown),
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
+                                      child: const Padding(
+                                        padding: EdgeInsets.all(8.0),
                                         child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
-                                          children: const [
+                                          children: [
                                             Text(
                                               'Based in:',
                                               style: TextStyle(
@@ -257,7 +257,7 @@ class MyHomePage extends StatelessWidget {
                                               width: 5,
                                             ),
                                             Text(
-                                              'Lagos, Nigeria.',
+                                              'Berlin, Germany.',
                                               style: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 20),
@@ -344,16 +344,16 @@ class MyHomePage extends StatelessWidget {
                         child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.all(10.0),
+                              const Padding(
+                                padding: EdgeInsets.all(10.0),
                                 child: Column(
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                      padding: EdgeInsets.all(8.0),
                                       child: Row(
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
-                                        children: const [
+                                        children: [
                                           Text(
                                             "About",
                                             style: TextStyle(
@@ -396,11 +396,11 @@ class MyHomePage extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.only(
-                                      left: width / 1.8,
-                                      bottom: height / 24,
-                                    ),
-                                    child: ElevatedButton(
+                                      padding: EdgeInsets.only(
+                                        left: width / 1.8,
+                                        bottom: height / 24,
+                                      ),
+                                      child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
                                             minimumSize: const Size(130, 60),
                                             backgroundColor: Colors.green),
@@ -418,8 +418,9 @@ class MyHomePage extends StatelessWidget {
                                           final Uri emailLaunchUri = Uri(
                                             scheme: 'mailto',
                                             path: 'obiohaugo1@gmail.com',
-                                            query: encodeQueryParameters(<
-                                                String, String>{
+                                            query:
+                                                encodeQueryParameters(<String,
+                                                    String>{
                                               'subject':
                                                   'Build me a new mobile App',
                                             }),
@@ -432,8 +433,17 @@ class MyHomePage extends StatelessWidget {
                                           style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 20),
-                                        )),
-                                  )
+                                        ),
+                                      )
+                                          .animate(
+                                            onPlay: (controller) => controller
+                                                .loop(count: 10, reverse: true),
+                                          )
+                                          .scaleXY(
+                                              end: 1.1,
+                                              curve: Curves.easeInOutCubic)
+                                          .tint(color: Colors.white, end: 0.2)
+                                          .elevation(end: 20)),
                                 ],
                               )
                             ]),
@@ -448,6 +458,7 @@ class MyHomePage extends StatelessWidget {
               height: 150,
             ),
             //  WEB design column now ========================================
+
             Column(
               children: [
                 Animate(
