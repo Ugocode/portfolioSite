@@ -282,7 +282,7 @@ class MyHomePage extends StatelessWidget {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(10),
                                         child: Image.asset(
-                                          "Assets/images/lagos.png",
+                                          "Assets/images/Berlin.png",
                                           fit: BoxFit.cover,
                                         ),
                                       ),
