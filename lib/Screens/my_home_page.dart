@@ -379,7 +379,7 @@ class MyHomePage extends StatelessWidget {
                                     child: Padding(
                                       padding: const EdgeInsets.all(12.0),
                                       child: Image.asset(
-                                        'Assets/images/about.png',
+                                        'Assets/images/newAbout.png',
                                         // height: 400,
                                         // width: 550,
                                         fit: BoxFit.contain,
