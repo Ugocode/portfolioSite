@@ -42,7 +42,9 @@ class MobileProjects extends StatelessWidget {
                         'Assets/images/moneyvest.PNG',
                         fit: BoxFit.fill,
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 1)),
+                    )
+                        .animate()
+                        .shake(duration: const Duration(milliseconds: 300)),
                     ProjectWidget(
                       title: 'MCare App',
                       bgColor: Colors.orange,
@@ -50,7 +52,9 @@ class MobileProjects extends StatelessWidget {
                         'Assets/images/mCare.png',
                         fit: BoxFit.fill,
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 2)),
+                    )
+                        .animate()
+                        .shake(duration: const Duration(milliseconds: 200)),
                     ProjectWidget(
                       title: 'Corona Virus App',
                       bgColor: Colors.orange,
@@ -58,7 +62,9 @@ class MobileProjects extends StatelessWidget {
                         'Assets/images/covidapp.png',
                         fit: BoxFit.fill,
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 3)),
+                    )
+                        .animate()
+                        .shake(duration: const Duration(milliseconds: 200)),
                     ProjectWidget(
                       title: 'Task App',
                       bgColor: Colors.orange,
@@ -66,7 +72,9 @@ class MobileProjects extends StatelessWidget {
                         'Assets/images/task.jpeg',
                         fit: BoxFit.fill,
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 4)),
+                    )
+                        .animate()
+                        .shake(duration: const Duration(milliseconds: 200)),
                   ],
                 )
               ],

@@ -80,7 +80,7 @@ class WebProjects extends StatelessWidget {
             ),
             Center(
               child: Text(
-                "We are excited to see you here! see how we are Shaking 😂😂😂 ",
+                "We are excited to see you here! see how we are Happy to see You 😂😂😂 ",
                 style: TextStyle(fontSize: 20, color: Colors.blueGrey[300]),
               ),
             ),
@@ -105,7 +105,7 @@ class WebProjects extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 3)),
+                    ).animate().shake(duration: const Duration(seconds: 2)),
                     InkWell(
                       onTap: () {
                         _launchBrainLink();
@@ -118,7 +118,7 @@ class WebProjects extends StatelessWidget {
                           fit: BoxFit.fill,
                         ),
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 3)),
+                    ).animate().shake(duration: const Duration(seconds: 2)),
                     InkWell(
                       onTap: () {
                         _launchgslmLink();
@@ -139,7 +139,7 @@ class WebProjects extends StatelessWidget {
                         'Assets/images/cifian.PNG',
                         fit: BoxFit.fill,
                       ),
-                    ).animate().shake(duration: const Duration(seconds: 3)),
+                    ).animate().shake(duration: const Duration(seconds: 2)),
                   ],
                 )
               ],
@@ -167,7 +167,7 @@ class WebProjects extends StatelessWidget {
                             fit: BoxFit.fill,
                           ),
                         ),
-                      ).animate().shake(duration: const Duration(seconds: 3)),
+                      ).animate().shake(duration: const Duration(seconds: 2)),
                       ProjectWidget(
                         title: 'VasBar Website',
                         bgColor: Colors.orange,
