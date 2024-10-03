@@ -97,7 +97,7 @@ class MobileProjects extends StatelessWidget {
                           'Assets/images/foo.png',
                           fit: BoxFit.fill,
                         ),
-                      ).animate().shake(duration: const Duration(seconds: 5)),
+                      ).animate().shake(duration: const Duration(seconds: 3)),
                       ProjectWidget(
                         title: 'Tef Food NG App',
                         bgColor: Colors.orange,
@@ -105,7 +105,7 @@ class MobileProjects extends StatelessWidget {
                           'Assets/images/tef.png',
                           fit: BoxFit.fill,
                         ),
-                      ).animate().shake(duration: const Duration(seconds: 6)),
+                      ).animate().shake(duration: const Duration(seconds: 2)),
                       ProjectWidget(
                         title: 'Shopy Girl App',
                         bgColor: Colors.orange,
@@ -113,7 +113,7 @@ class MobileProjects extends StatelessWidget {
                           'Assets/images/shopy.png',
                           fit: BoxFit.fill,
                         ),
-                      ).animate().shake(duration: const Duration(seconds: 7)),
+                      ).animate().shake(duration: const Duration(seconds: 2)),
                       ProjectWidget(
                         title: 'Task App',
                         bgColor: Colors.orange,
@@ -121,7 +121,7 @@ class MobileProjects extends StatelessWidget {
                           'Assets/images/task.jpeg',
                           fit: BoxFit.fill,
                         ),
-                      ).animate().shake(duration: const Duration(seconds: 8)),
+                      ).animate().shake(duration: const Duration(seconds: 2)),
                     ],
                   )
                 ],
